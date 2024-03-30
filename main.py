@@ -23,7 +23,7 @@ while game_is_on:
     for car in carmanager.all_cars:
         if car.distance(player) < 20:
             game_is_on = False
-            player.gamover()
+            scoreboard.gamover()
     if player.ycor()>300:
         player = Player()
         carmanager.increase_speed()
