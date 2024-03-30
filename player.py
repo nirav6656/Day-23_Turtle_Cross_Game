@@ -18,4 +18,8 @@ class Player(Turtle):
         self.forward(MOVE_DISTANCE)
 
 
+    def gamover(self):
+        self.write("Game Over", align="center")
+
+
 
